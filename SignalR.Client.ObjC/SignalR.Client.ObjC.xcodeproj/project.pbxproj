@@ -124,7 +124,7 @@
 		3920792C15AF1854009B959E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3920792B15AF1854009B959E /* main.m */; };
 		3920793315AF1854009B959E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3920793115AF1854009B959E /* MainStoryboard_iPhone.storyboard */; };
 		3920793615AF1854009B959E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3920793415AF1854009B959E /* MainStoryboard_iPad.storyboard */; };
-		3920794015AF187D009B959E /* libSignalR.Client.iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3920780715AF13C3009B959E /* libSignalR.Client.iOS.a */; };
+		3920794015AF187D009B959E /* libSignalR.Client.iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3920780715AF13C3009B959E /* libSignalR.Client.iOS.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3920795515AF1BEA009B959E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3920794815AF1BEA009B959E /* AppDelegate.m */; };
 		3920795615AF1BEA009B959E /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3920794A15AF1BEA009B959E /* ChatViewController.m */; };
 		3920795715AF1BEA009B959E /* ConnectionStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3920794C15AF1BEA009B959E /* ConnectionStatusViewController.m */; };
@@ -1322,7 +1322,6 @@
 				INFOPLIST_FILE = "SignalR.Samples.OSX/SignalR.Samples.OSX-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
@@ -1332,6 +1331,7 @@
 		};
 		3919636015AF1EC200DDC946 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB4A9FD3D185C7FAD552CE38 /* Pods-SignalR.Client.OSX.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1345,7 +1345,6 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "SignalR.Samples.OSX/SignalR.Samples.OSX-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
@@ -1537,7 +1536,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SignalR.Samples.iOS/SignalR.Samples.iOS-Prefix.pch";
 				INFOPLIST_FILE = "SignalR.Samples.iOS/SignalR.Samples.iOS-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
@@ -1547,13 +1545,13 @@
 		};
 		3920793F15AF1854009B959E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F173597A2396534A616ED38B /* Pods-SignalR.Client.iOS.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SignalR.Samples.iOS/SignalR.Samples.iOS-Prefix.pch";
 				INFOPLIST_FILE = "SignalR.Samples.iOS/SignalR.Samples.iOS-Info.plist";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
