@@ -4,7 +4,7 @@ workspace 'SignalR.Client.ObjC'
 target :"SignalR.Client.iOS", :exclusive => true do
   platform :ios, '6.0'
   pod 'AFNetworking'
-  pod 'SocketRocket'
+  pod 'SocketRocket', "test"
 end
 
 target :"SignalR.Client.OSX", :exclusive => true do
