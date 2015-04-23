@@ -28,6 +28,7 @@
 #import "SRVersion.h"
 #import "SRKeepAliveData.h"
 #import "SRHeartbeatMonitor.h"
+#import "SRWebSocketTransport.h"
 
 #import "NSObject+SRJSON.h"
 
@@ -243,6 +244,13 @@
         _connectionToken = nil;
         _groupsToken = nil;
         _messageId = nil;
+        
+        
+        if ([_transport isKindOfClass:[SRWebSocketTransport class]]) {
+            [[(SRWebSocketTransport *)_transport webSocket] close];
+            [(SRWebSocketTransport *)_transport webSocket].delegate = nil;
+            // ???: should i also set websocket object to nil
+        }
         
         [self didClose];
     }
