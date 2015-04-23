@@ -45,10 +45,12 @@
 #define LOG_WEBSOCKETS          (ddLogLevel & LOG_LEVEL_WEBSOCKETS  )
 #define LOG_AUTOTRANSPORT       (ddLogLevel & LOG_FLAG_AUTOTRANSPORT )
 
+typedef int DDLogLevel;
+
 #if SRLogEnabled == 1
-static int ddLogLevel = LOG_LEVEL_AUTOTRANSPORT;
+static DDLogLevel ddLogLevel = LOG_LEVEL_AUTOTRANSPORT;
 #else
-static int ddLogLevel = LOG_LEVEL_OFF;
+static DDLogLevel ddLogLevel = LOG_LEVEL_OFF;
 #endif
 
 #define COCOA_LUMBER_JACK 0
