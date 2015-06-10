@@ -58,4 +58,9 @@
  */
 - (void)invokeEvent:(NSString *)eventName withArgs:(NSArray *)args;
 
+/**
+ *  clear all subscription
+ */
+- (void)removeAllSubscriptions;
+
 @end

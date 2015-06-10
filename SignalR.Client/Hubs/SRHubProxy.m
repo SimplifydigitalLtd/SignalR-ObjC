@@ -100,6 +100,10 @@
     }
 }
 
+- (void)removeAllSubscriptions {
+    [_subscriptions removeAllObjects];
+}
+
 #pragma mark -
 #pragma mark Publish
 
