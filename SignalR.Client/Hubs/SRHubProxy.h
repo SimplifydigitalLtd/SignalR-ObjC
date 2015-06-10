@@ -63,4 +63,11 @@
  */
 - (void)removeAllSubscriptions;
 
+/**
+ *  remove a subscription with the event name
+ *
+ *  @param name event
+ */
+- (void)removeSubscriptionWithEvent:(NSString *)name;
+
 @end

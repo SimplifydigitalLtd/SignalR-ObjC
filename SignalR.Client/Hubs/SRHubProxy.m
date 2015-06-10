@@ -104,6 +104,10 @@
     [_subscriptions removeAllObjects];
 }
 
+- (void)removeSubscriptionWithEvent:(NSString *)name {
+    [_subscriptions removeObjectForKey:name];
+}
+
 #pragma mark -
 #pragma mark Publish
 
