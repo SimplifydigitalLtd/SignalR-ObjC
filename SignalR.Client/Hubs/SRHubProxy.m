@@ -32,7 +32,6 @@
 
 @property (assign, nonatomic, readonly) id <SRHubConnectionInterface> connection;
 @property (strong, nonatomic, readonly) NSString *hubName;
-@property (strong, nonatomic, readonly) NSMutableDictionary *subscriptions;
 
 @end
 
