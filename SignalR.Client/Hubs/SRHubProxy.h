@@ -31,6 +31,11 @@
 
 @property (strong, nonatomic, readonly) NSMutableDictionary *state;
 
+/**
+ * Object methods to run on response 
+ */
+@property (strong, nonatomic, readonly) NSMutableDictionary *subscriptions;
+
 ///-------------------------------
 /// @name Initializing an SRHubProxy Object
 ///-------------------------------
