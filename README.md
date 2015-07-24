@@ -2,6 +2,8 @@
     <img src="https://f.cloud.github.com/assets/1089907/475156/237c7c22-b780-11e2-92e8-3787fdfe5f08.png" />
 </p>
 
+[NOTICE!] this fork contains minor modification to make project more stable and crash less.
+
 SignalR-ObjC is a client library for iOS and Mac OS X.  It's built on top of two popular open source libraries [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [SocketRocket](https://github.com/square/SocketRocket).
 SignalR-ObjC is intended to be used along side ASP.NET SignalR, a new library for ASP.NET developers that makes it incredibly simple to add real-time functionality to your applications. What is "real-time web" functionality? It's the ability to have your server-side code push content to the connected clients as it happens, in real-time.
 
